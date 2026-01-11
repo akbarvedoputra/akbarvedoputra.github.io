@@ -10,6 +10,14 @@ function login() {
     }
 }
 
+function logout() {
+    localStorage.clear();
+
+    // redirect + force reload
+    window.location.href = "index.html";
+}
+
+
 /* Highlight menu aktif */
 document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll("aside a");

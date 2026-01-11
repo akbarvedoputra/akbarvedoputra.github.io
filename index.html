@@ -11,16 +11,19 @@
     <div class="login-card">
         <h1>Konsep Sistem Informasi</h1>
         <p class="subtitle">Login Sistem</p>
-
-        <input type="text" id="username" placeholder="Username">
-        <input type="password" id="password" placeholder="Password">
-
-        <button type="button" onclick="login()" class="btn-login">
-            Masuk
-        </button>
+<form id="loginForm" onsubmit="login(); return false;">
+    <input type="text" id="username" placeholder="Username" autocomplete="off">
+    <input type="password" id="password" placeholder="Password" autocomplete="off">
+    <button type="submit">Login</button>
+</form>
 
     </div>
 </div>
+<script>
+window.onload = function () {
+    document.getElementById("loginForm").reset();
+};
+</script>
 
 <script src="assets/js/script.js"></script>
 </body>
