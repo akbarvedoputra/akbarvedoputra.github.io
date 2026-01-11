@@ -9,12 +9,9 @@ function login() {
         alert("Username atau password salah!");
     }
 }
-
 function logout() {
-    localStorage.clear();
-
-    // redirect + force reload
-    window.location.href = "index.html";
+    localStorage.removeItem("login");
+    window.location.replace("index.html");
 }
 
 
