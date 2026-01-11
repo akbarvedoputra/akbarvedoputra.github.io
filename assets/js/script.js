@@ -4,7 +4,7 @@ function login() {
 
     if (username === "akbar" && password === "0503") {
         alert("Login berhasil!");
-        window.location.href = "index.html";
+        window.location.href = "data_diri.html";
     } else {
         alert("Username atau password salah!");
     }

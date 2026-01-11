@@ -1,34 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Data Diri - Konsep Sistem Informasi</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <!-- HEADER -->
-    <div class="header">
-      <div class="matkul">Konsep Sistem Informasi</div>
-      <div class="menu">
-        <a href="index.html">Data Diri</a>
-        <a href="profil_umkm.html">UMKM</a>
-        <a href="konsep_si.html">Konsep SI</a>
-        <a href="kesimpulan.html">Kesimpulan</a>
-        <a href="login.html">Logout</a>
-      </div>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Konsep Sistem Informasi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="login-page">
+
+<div class="login-container">
+    <div class="login-card">
+        <h1>Konsep Sistem Informasi</h1>
+        <p class="subtitle">Login Sistem</p>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button type="button" onclick="login()" class="btn-login">
+            Masuk
+        </button>
+
     </div>
+</div>
 
-    <!-- KONTEN -->
-    <div class="container">
-      <h2>DATA DIRI MAHASISWA</h2>
-
-      <img src="assets/img/foto.jpeg" alt="Foto Diri" class="foto" />
-
-      <p><b>Nama</b> : Akbar</p>
-      <p><b>NPM</b> : 2024510034</p>
-      <p><b>Program Studi</b> : Sistem informasi</p>
-      <p><b>Mata Kuliah</b> : Konsep Sistem Informasi</p>
-      <p><b>Dosen Pengampu</b> : Ariastuti Rahman, S.Kom, M.Kom</p>
-    </div>
-    <script src="assets/js/script.js"></script>
-  </body>
+<script src="assets/js/script.js"></script>
+</body>
 </html>
